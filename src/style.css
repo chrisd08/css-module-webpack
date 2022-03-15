@@ -4,7 +4,7 @@
 }
 
 .page {
-  background-color: purple;
+  background-color: blue;
   width: 100vw;
   height: 100vh;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -13,9 +13,13 @@
   justify-content: center;
 }
 
+.textComposed {
+  color: red;
+}
+
 .text {
-  text-transoform: capitalize;
-  color: #fff;
+  composes: textComposed;
+  text-transform: capitalize;
   font-weight: bold;
   font-size: 4em;
 }
